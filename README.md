@@ -11,6 +11,7 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😅
 <h1>FILE EXPLAIN</h1>
 <ul>
   <li>sketch.ino</li>
+  berisi program utama yang akan diupload ke Arduino Nano
 </ul>
 
 <h1>HOW TO PLAY THIS GAME?</h1>
