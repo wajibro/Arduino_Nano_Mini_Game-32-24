@@ -11,7 +11,8 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😁
 <h1>HOW TO PLAY THIS GAME?</h1>
 
 <h2>FIRST START</h2>
-![Load.gif](https://github.com/wajibro/Arduino_Nano_Mini_Game-32-24/blob/main/gif)
+![Load](https://github.com/user-attachments/assets/f7bdfea4-f238-4067-83e7-aec4cdc4cdd8)
+
 <p>
   Saat pertama kali menyalakan akan ada animasi loading, kemudian kalian bisa memilih mode yang berjumlah 3
   
@@ -19,7 +20,8 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😁
 </p>
 
 <h2>MODE 1</h2>
-![Mode1](https://github.com/user-attachments/assets/ba4a55d5-03f2-4f5e-9e28-b7f631e3c9c9)
+![Uploading Mode1.gif…]()
+
 <p>
   Mode 1 merupakan counter increment 0 - 99 dan estimasi nya divisualisasikan dengan LED menyala secara melingkar
 </p>
