@@ -1,6 +1,6 @@
 # Arduino_Nano_Mini_Game-32-24
 
-<image align="center" alt="Gambar Rangkaian.png" src="https://github.com/wajibro/Arduino_Nano_Mini_Game-32-24/blob/main/Gambar%20Rangkaian.png" />
+<image src="https://github.com/wajibro/Arduino_Nano_Mini_Game-32-24/blob/main/Gambar%20Rangkaian.png" />
 
 Ini sebuah repo berisi balas dendam gweh atas sebuah kompetisi yang dimana gweh kaga menang
 
@@ -21,7 +21,7 @@ Button delay? spam sampe bisa, we juga ga tau cara fix nya 😅
 <h1>HOW TO PLAY THIS GAME?</h1>
 
 <h2>FIRST START</h2>
-<image align="center" src="https://github.com/user-attachments/assets/f7bdfea4-f238-4067-83e7-aec4cdc4cdd8" />
+<image src="https://github.com/user-attachments/assets/f7bdfea4-f238-4067-83e7-aec4cdc4cdd8" />
 
 
 <p>
