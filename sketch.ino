@@ -1,12 +1,12 @@
 #include <Arduino.h>
 
+bool clearmode = 0;
+
 byte maping = 0;
 
 byte mode1[8] = {0, 1, 2, 5, 8, 7, 6, 3};
 byte mode2[7] = {6, 3, 0, 1, 2, 5, 8};
-
-byte snailMode[9] = {6, 3, 0, 1, 2, 5, 8, 7, 4};
-bool clearmode = 0;
+byte spiralMode[9] = {6, 3, 0, 1, 2, 5, 8, 7, 4};
 
 byte led[9] = {A1, A2, A3, A4, A5, 7, 6, 5, 4};
 
@@ -129,7 +129,7 @@ void setup() {
 
     seg(2, 4);
     for(byte i = 0; i < 9; i++){
-      digitalWrite(led[snailMode[i]], 1);
+      digitalWrite(led[spiralMode[i]], 1);
       delay(2000/9);
     }
 
