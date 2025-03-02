@@ -6,7 +6,7 @@ Intinya ni repo cuma berisi coding ala" mini game
 
 Kalo pengen langsung main bisa ke <a href="https://wokwi.com/projects/424131405322969089"> WOKWI </a>
 
-Ni coding masih jauh dari sempurna, kalau semisal ada yang pen bantu silahkan 😁
+Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😁
 
 <h1>HOW TO PLAY THIS GAME?</h1>
 
