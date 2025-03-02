@@ -12,6 +12,7 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😁
 
 <h2>FIRST START</h2>
 ![Load](https://github.com/user-attachments/assets/f7bdfea4-f238-4067-83e7-aec4cdc4cdd8)
+<image src="https://github.com/user-attachments/assets/f7bdfea4-f238-4067-83e7-aec4cdc4cdd8"></image>
 
 <p>
   Saat pertama kali menyalakan akan ada animasi loading, kemudian kalian bisa memilih mode yang berjumlah 3
