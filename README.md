@@ -28,6 +28,8 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😅
   Saat pertama kali menyalakan akan ada animasi loading, kemudian kalian bisa memilih mode yang berjumlah 3
   
   Tombol atas dan bawah untuk mengganti mode, kemudian tombol tengah untuk mengkonfirmasi mode yang ingin dituju
+
+  Ingin keluar dari mode saat ini? Reset aja lah 😹
 </p>
 
 <h2>MODE 1</h2>
