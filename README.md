@@ -9,3 +9,5 @@ Kalo pengen langsung main bisa ke https://wokwi.com/projects/424131405322969089
 Ni coding masih jauh dari sempurna, kalau semisal ada yang pen bantu silahkan 😁
 
 <h1>HOW TO PLAY THIS GAME?</h1>
+
+![Load.gif]()
