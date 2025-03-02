@@ -20,7 +20,7 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😁
 </p>
 
 <h2>MODE 1</h2>
-![Uploading Mode1.gif…]()
+![Mode1](https://github.com/user-attachments/assets/4ad2faca-0ebe-4e2d-ad2b-f30f11c0a22e)
 
 <p>
   Mode 1 merupakan counter increment 0 - 99 dan estimasi nya divisualisasikan dengan LED menyala secara melingkar
