@@ -23,5 +23,22 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😁
 <image src="https://github.com/user-attachments/assets/4ad2faca-0ebe-4e2d-ad2b-f30f11c0a22e" />
 
 <p>
-  Mode 1 merupakan counter increment 0 - 99 dan estimasi nya divisualisasikan dengan LED menyala secara melingkar
+  Counter increment 0 - 99 dan estimasi nya divisualisasikan dengan LED menyala secara melingkar
+</p>
+
+<h2>MODE 2</h2>
+<image src="https://github.com/user-attachments/assets/2290b8cc-abd5-454b-a3eb-d56aeffd07a2" />
+
+<p>
+  Memvisualisaikan pergerakan potensio/knob pada Seven Segment dan LED
+</p>
+<h2>MODE 3</h2>
+<image src="https://github.com/user-attachments/assets/2d087e58-02d6-470f-97e1-aa3c0e291655" />
+
+<p>
+  Kalian akan diberikan sebuah cursor yang bisa dikendalikan menggunakan analog
+
+  Tombol tengah digunakan untuk mengunci LED pada cursor
+
+  Saat seluruh LED terkunci maka Seven Segment dan LED akan berkedip
 </p>
