@@ -4,7 +4,7 @@ Ini sebuah repo berisi balas dendam gweh atas sebuah kompetisi yang dimana gweh 
 
 Intinya ni repo cuma berisi coding ala" mini game
 
-Kalo pengen langsung main bisa ke <input type="button" href="https://wokwi.com/projects/424131405322969089" placeholder="WOKWI">
+Kalo pengen langsung main bisa ke <a href="https://wokwi.com/projects/424131405322969089"> WOKWI </a>
 
 Ni coding masih jauh dari sempurna, kalau semisal ada yang pen bantu silahkan 😁
 
