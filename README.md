@@ -8,6 +8,11 @@ Kalo pengen langsung main bisa ke <a href="https://wokwi.com/projects/4241314053
 
 Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😅
 
+<h1>FILE EXPLAIN</h1>
+<ul>
+  <li>sketch.ino</li>
+</ul>
+
 <h1>HOW TO PLAY THIS GAME?</h1>
 
 <h2>FIRST START</h2>
