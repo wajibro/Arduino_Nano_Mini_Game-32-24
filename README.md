@@ -11,7 +11,7 @@ Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😁
 <h1>HOW TO PLAY THIS GAME?</h1>
 
 <h2>FIRST START</h2>
-![](https://github.com/wajibro/Arduino_Nano_Mini_Game-32-24/blob/main/gif/Load.gif)
+![Load.gif](https://github.com/wajibro/Arduino_Nano_Mini_Game-32-24/blob/main/gif)
 <p>
   Saat pertama kali menyalakan akan ada animasi loading, kemudian kalian bisa memilih mode yang berjumlah 3
   
