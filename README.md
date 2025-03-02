@@ -8,7 +8,7 @@ Intinya ni repo cuma berisi coding ala" mini game
 
 Kalo pengen langsung main bisa ke <a href="https://wokwi.com/projects/424131405322969089"> WOKWI </a>
 
-Maaf kalo semisal button-nya kerasa agak delay, we juga ga tau cara fix nya 😅
+Button delay? spam sampe bisa, we juga ga tau cara fix nya 😅
 
 <h1>FILE EXPLAIN</h1>
 <ul>
