@@ -1,12 +1,12 @@
 #include <Arduino.h>
 
-bool clearmode = 0;
-
 byte maping = 0;
 
 byte mode1[8] = {0, 1, 2, 5, 8, 7, 6, 3};
 byte mode2[7] = {6, 3, 0, 1, 2, 5, 8};
+
 byte spiralMode[9] = {6, 3, 0, 1, 2, 5, 8, 7, 4};
+bool clearmode = 0;
 
 byte led[9] = {A1, A2, A3, A4, A5, 7, 6, 5, 4};
 
@@ -38,33 +38,28 @@ byte num [10][8]={
 };
  
 void seg(byte x, byte y){
-  for(byte i=0; i<8; i++){
-      digitalWrite(sr[DATA], num[x][i] ? 1 : 0);
+  byte j = 0;
+  while(j < 2){
+    for(byte i = 0; i < 8; i++){
+      digitalWrite(sr[DATA], num[j ? y : x][i] ? 1 : 0);
       digitalWrite(sr[CLK], 0);
       digitalWrite(sr[CLK], 1);
     }
-    for(byte i=0; i<8; i++){
-      digitalWrite(sr[DATA], num[y][i] ? 1 : 0);
-      digitalWrite(sr[CLK], 0);
-      digitalWrite(sr[CLK], 1);
-    }
-  digitalWrite(sr[LATCH], 0);
-  digitalWrite(sr[LATCH], 1);
+    digitalWrite(sr[LATCH], j ? 1 : 0);
+    j++;
+  }
 }
 void segNull(){
-  for(byte i=0; i<8; i++){
-    digitalWrite(sr[DATA], 0);
-    digitalWrite(sr[CLK], 0);
-    digitalWrite(sr[CLK], 1);
+  byte j = 0;
+  while(j < 2){
+    for(byte i = 0; i < 8; i++){
+      digitalWrite(sr[DATA], 0);
+      digitalWrite(sr[CLK], 0);
+      digitalWrite(sr[CLK], 1);
+    }
+    digitalWrite(sr[LATCH], j ? 1 : 0);
+    j++;
   }
-  for(byte i=0; i<8; i++){
-    digitalWrite(sr[DATA], 0);
-    digitalWrite(sr[CLK], 0);
-    digitalWrite(sr[CLK], 1);
-  }
-  digitalWrite(sr[LATCH], 0);
-  digitalWrite(sr[LATCH], 1);
-
 }
 enum buttonPos{ 
   top, 
@@ -74,74 +69,10 @@ enum buttonPos{
   bottom
   };
 byte button[5] = {2, 12, 11, 3, 13};
+byte stateLed[9];
 
 int8_t cursor = 1;
-byte stateLed[9] = {0,0,0,0,0,0,0,0,0};
 
-void setup() {
-  pinMode(A0, INPUT);
-  {
-    byte count = 0;
-    while(count <= 9){
-      pinMode(led[count], OUTPUT);
-      digitalWrite(led[count], 0);
-      count++;
-    }
-  }
-  {
-    byte count = 0;
-    byte icount = 0;
-    while(count <= 3){
-      pinMode(sr[count], OUTPUT);
-      count++;
-    }
-    while(icount <= 8){
-      digitalWrite(sr[DATA], 0);
-      digitalWrite(sr[CLK], 0);
-      digitalWrite(sr[CLK], 1);
-      icount++;
-    }
-    digitalWrite(sr[LATCH], 0);
-    digitalWrite(sr[LATCH], 1);
-  }
-  {
-    byte count = 0;
-    while (count < 5){
-      pinMode(button[count], INPUT);
-      count++;
-    }
-  }
-  //Main Begin
-  {
-    delay(1000);
-
-    for(byte i=0; i<9; i++){
-      digitalWrite(led[i], 1);
-    }
-    seg(3, 2);
-    delay(800);
-    
-    for(byte i = 0; i < 9; i++){
-      digitalWrite(led[i], 0);
-    }
-    segNull();
-    delay(500);
-
-    seg(2, 4);
-    for(byte i = 0; i < 9; i++){
-      digitalWrite(led[spiralMode[i]], 1);
-      delay(2000/9);
-    }
-
-    for(byte i = 0; i < 9; i++){
-      digitalWrite(led[i], 0);
-    }
-    segNull();
-
-    delay(500);
-  }
-  
-}
 
 byte counter1 = 0;
 
@@ -150,7 +81,8 @@ byte instate = 0;
 
 byte finalState;
 
-byte lb[5] = {0, 0, 0, 0, 0};
+byte lb[5];
+
 
 bool blink = 1;
 
@@ -297,6 +229,78 @@ void gameMode3(){
   }
 
   end();
+}
+
+void setup() {
+  for(byte i = 0; i < 9; i++){
+    stateLed[i] = 0;
+  }
+  for(byte i = 0; i < 5; i++){
+    lb[i] = 0;
+  }
+
+  pinMode(A0, INPUT);
+  {
+    byte count = 0;
+    while(count <= 9){
+      pinMode(led[count], OUTPUT);
+      digitalWrite(led[count], 0);
+      count++;
+    }
+  }
+  {
+    byte count = 0;
+    byte icount = 0;
+    while(count <= 3){
+      pinMode(sr[count], OUTPUT);
+      count++;
+    }
+    while(icount <= 8){
+      digitalWrite(sr[DATA], 0);
+      digitalWrite(sr[CLK], 0);
+      digitalWrite(sr[CLK], 1);
+      icount++;
+    }
+    digitalWrite(sr[LATCH], 0);
+    digitalWrite(sr[LATCH], 1);
+  }
+  {
+    byte count = 0;
+    while (count < 5){
+      pinMode(button[count], INPUT);
+      count++;
+    }
+  }
+  //Main Begin
+  {
+    delay(1000);
+
+    for(byte i=0; i<9; i++){
+      digitalWrite(led[i], 1);
+    }
+    seg(3, 2);
+    delay(800);
+    
+    for(byte i = 0; i < 9; i++){
+      digitalWrite(led[i], 0);
+    }
+    segNull();
+    delay(500);
+
+    seg(2, 4);
+    for(byte i = 0; i < 9; i++){
+      digitalWrite(led[spiralMode[i]], 1);
+      delay(2000/9);
+    }
+
+    for(byte i = 0; i < 9; i++){
+      digitalWrite(led[i], 0);
+    }
+    segNull();
+
+    delay(500);
+  }
+  
 }
 
 void loop() {\
